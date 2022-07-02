@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react'
 import Card from './components/Card'
 import "./App.scss"
 import axios from 'axios';
-// import axios from 'axios'
+import "../src/App.scss"
 
 const url = "https://randomuser.me/api";
 
@@ -26,11 +26,11 @@ const App = () => {
  
  return (
   <div className='App'>
-   <div>
+   <div>asd
     {user && <Card user = {user}/>}
    </div>
    <div>
-    <button></button>
+    <button className='button' onClick={user}>Generate Person</button>
    </div>
   </div>
   )
